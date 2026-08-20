@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Journal</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- Folder sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Folders</h2>
+      </div>
+      <ul id="folderList" class="folder-list"></ul>
+      <form id="newFolderForm" class="new-folder-form">
+        <input id="newFolderName" type="text" placeholder="New folder name" required />
+        <button type="submit">+ Add</button>
+      </form>
+      <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </aside>
+
+    <!-- Main editor + entry list -->
+    <main class="main-journal">
+      <header class="main-journal-header">
+        <h1 id="currentFolderLabel">Journal</h1>
+      </header>
+
+      <section class="editor">
+        <input id="entryTitle" type="text" placeholder="Title (optional)" />
+        <textarea id="entryText" rows="8" placeholder="Write here..."></textarea>
+        <div class="editor-actions">
+          <button id="saveBtn">Save Entry</button>
+          <button id="cancelEditBtn" class="secondary" hidden>Cancel Edit</button>
+        </div>
+        <p id="statusMsg" class="status-msg"></p>
+      </section>
+
+      <section class="entries">
+        <ul id="entryList" class="entry-list"></ul>
+        <p id="emptyMsg" class="empty-msg" hidden>No entries in this folder yet.</p>
+      </section>
+    </main>
+
+  </div>
+
+  <script type="module" src="journal.js"></script>
+</body>
+</html>

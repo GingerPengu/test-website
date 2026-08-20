@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GingerPengu</title>
+<link rel="stylesheet" href="Style-Index.css">
+</head>
+<body class="menu-body">
+    <div class="menu-screen">
+        <!-- SIDEBAR -->
+        <aside class="side-bar" id="side-bar">
+            <div class="search-bar">
+                Search?
+            </div>
+            <nav class="side-bar-items">
+                <button data-program="journal.html" class="indexSelect item1"> 📓<span>Journal</span> </button>
+                <button data-program="tasks.html" class="indexSelect item2"> ✅<span>Tasks</span> </button>
+                <button data-program="planner.html" class="indexSelect item3"> 📅<span>Planner</span> </button>
+                <button data-program="ideas.html" class="indexSelect item4"> 💡<span>Ideas</span> </button>
+                <button data-program="goals.html" class="indexSelect item5"> 🎯<span>Goals</span> </button>
+                <button data-program="study.html" class="indexSelect item6"> 📚<span>Study</span> </button>
+                <button data-program="budget.html" class="indexSelect item7"> 💰<span>Budget</span> </button>
+                <button data-program="settings.html" class="indexSelect item8"> ⚙️<span>Settings</span> </button>
+            </nav>
+        </aside>
+        <!-- MAIN / HOME AREA -->
+        <main class="main-area" id="main-area">
+            <selection class="welcome-screen" id="welcome-screen">
+                <h1>Welcome to GingerPengu</h1>
+                <p>Select something from the sidebar.</p>
+            </selection>
+            <!-- Programs appear here -->
+                <iframe
+                id="program-frame" class="program-frame" title="Program">
+                </iframe>
+        </main>
+    </div>
+<script src="Script-index.js"></script>
+</body>
+</html>
